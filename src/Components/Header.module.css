@@ -1,0 +1,16 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+ 
+}
+.heading{
+    color:white;
+    letter-spacing: 1rem;
+
+}
+.toggleButton{
+    width: 40px;
+    height: 40px;
+}

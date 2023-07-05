@@ -1,0 +1,46 @@
+
+.darkbgImg{
+  background: url(./images/bg-desktop-dark.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+}
+.lightbgImg{
+  background: url(./images/bg-desktop-light.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+}
+.darkbgMbImg{
+  background: url(./images/bg-mobile-dark.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+}
+.lightbgMbImg{
+  background: url(./images/bg-mobile-light.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+}
+.overlay {
+  display: flex;
+justify-content: center;
+padding: 8.5% 0 6% ;
+  opacity: 0.8;
+  background-color:hsl(236, 33%, 92%);
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  
+}
+.circle:hover{
+  border-color: rgb(80, 80, 182);
+}

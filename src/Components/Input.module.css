@@ -1,0 +1,45 @@
+
+.check{
+    background: url(../images/icon-check.svg);
+}
+.circle:hover{
+   
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    background: #5BD6AD;
+    background: linear-gradient(135deg, #5BD6AD, #A828C6);;
+}
+
+.inputDark{
+    all: unset;
+    /* border-style: none; */
+    background-color: hsl(235, 24%, 19%);
+    border-radius: .5rem;
+    
+}
+.inputDark::placeholder{
+    color: hsl(0, 0%, 98%);
+    font-size: 1.3rem;
+}
+.inputDark[type="text"]{
+    color: hsl(0, 0%, 98%);
+    font-size: 1.3rem;
+}
+
+/* ////////////////////////////////////// */
+
+.inputLight{
+    all: unset;
+    border-style: none;
+    background-color:white;
+    border-radius: .5rem;
+    
+}
+.inputLight::placeholder{
+    color: hsl(237, 14%, 26%);
+    font-size: 1.3rem;
+}
+.inputLight[type="text"]{
+    color:hsl(237, 14%, 26%);
+    font-size: 1.3rem;
+}
+

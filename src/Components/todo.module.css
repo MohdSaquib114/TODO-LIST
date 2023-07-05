@@ -1,0 +1,10 @@
+
+.main{
+    width: 600px;
+  }
+
+@media (max-width:480px) {
+    .main{
+     width: auto;
+    }
+}
