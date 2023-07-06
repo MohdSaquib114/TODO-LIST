@@ -15,7 +15,7 @@ const App = () => {
   const [ previousState, setPState] = useState([])
   useEffect(()=>{
     localStorage.setItem('todoarray',JSON.stringify(todoArray))
-
+    
   },[todoArray])
 
    
@@ -27,7 +27,6 @@ const App = () => {
     settodoArr((arr)=>{
       return [...arr,{text:inputValue,isDone:false}]})
     setinputValue('')
-    console.log(todoArray)
     const currentState = [...todoArray,{text:inputValue,isDone:false}]
     setPState([...previousState,currentState])
    
@@ -38,18 +37,22 @@ const App = () => {
   
 
 const viewAll=()=>{
-console.log(previousState)
+
 const lastState = previousState[previousState.length-1]
-settodoArr(lastState)
+settodoArr(lastState|| todoArray)
+console.log(previousState)
+console.log(lastState)
   }
 
   const viewActive=()=>{
-  settodoArr(todoArray.filter(todo=>todo.isDone===false))
+    const tempArr =previousState[previousState.length-1].filter(obj=>obj.isDone===false)
+    console.log(tempArr)
+  settodoArr(tempArr||todoArray.filter(todo=>todo.isDone===false))
 }
 
 const viewCompleted = ()=>{
- 
-  settodoArr(todoArray.filter(todo=>todo.isDone===true))
+  const tempArr =previousState[previousState.length-1].filter(obj=>obj.isDone===false)
+  settodoArr( tempArr ||todoArray.filter(todo=>todo.isDone===true))
 }
 
   const completeRemover=()=>{
