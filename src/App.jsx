@@ -1,7 +1,7 @@
 import {useEffect,useState} from 'react'
 import './App.css'
 import useCurrentWidth from './Components/useCurrentWidth'
-import Todo from '../src/Components/todo';
+import Todo from './Components/Todo'
 import Header from './Components/Header';
 import Input from './Components/Input';
 import TodoMain from './Components/TodoMain';

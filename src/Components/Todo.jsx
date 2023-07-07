@@ -1,5 +1,5 @@
- /* eslint-disable react/prop-types */
-import style from './todo.module.css'
+     /* eslint-disable react/prop-types */
+ import style from './todo.module.css'
 
 const Todo = ({children}) => {
   return (
@@ -9,4 +9,4 @@ const Todo = ({children}) => {
   )
 }
 
-export default Todo
+export default Todo 
