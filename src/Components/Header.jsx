@@ -9,7 +9,7 @@ const Header = ({isDark, handleDarkLight}) => {
   return (
     <header className={style.header}>     
          <h1 className={style.heading}>TODO</h1>
-         <img className={style.toggleButton} style={{alignSelf:'center'}} onClick={handleDarkLight} src={darkOrLight} />
+         <img className={style.toggleButton} style={{alignSelf:'center'}} onClick={handleDarkLight} src={darkOrLight} alt='theme-chng-btn'/>
     
     </header>
   )
